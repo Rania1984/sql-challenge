@@ -3,6 +3,7 @@ For this Module challenge, I started by working on the data modeling task by ske
 
 For Data Engineering, I ran into an issue while importing the CSV files. The error "for reading: Permission denied" occurred because PostgreSQL didn’t have the required permissions to access the CSV
 file. I used ChatGPT for assistance, which suggested placing the folder with the CSV files in a publicly accessible directory (/Users/Shared) and using the following command to resolve the issue:
+
 COPY table_name
 FROM '/Users/Shared/data/file.csv'
 DELIMITER ','
